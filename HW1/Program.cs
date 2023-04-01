@@ -27,6 +27,42 @@ if (numTwo < numOne) {
     Console.WriteLine($"{numTwo} < {numOne}");
 }
 
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
+
+Console.WriteLine("Программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел.");
+System.Console.WriteLine("Введите первое число: ");
+string? one = Console.ReadLine();
+int numOne = Convert.ToInt32(one);
+
+System.Console.WriteLine("Введите второе число: ");
+string? two = Console.ReadLine();
+int numTwo = Convert.ToInt32(two);
+
+System.Console.WriteLine("Введите третье число: ");
+string? three = Console.ReadLine();
+int numThree = Convert.ToInt32(three);
+
+int max = numOne;
+
+if (numTwo > numOne)
+{
+    max = numTwo;
+    if (numThree > numTwo)
+    {
+        max = numThree;
+    }
+}
+else if (numThree > numOne)
+{
+    max = numThree;
+}
+
+Console.WriteLine("Максимальное число: " + max);
+
 
 
 
