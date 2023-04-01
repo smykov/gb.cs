@@ -14,16 +14,20 @@ string two = Console.ReadLine();
 int numOne = Convert.ToInt32(one);
 int numTwo = Convert.ToInt32(two);
 
-if (numOne > numTwo) {
+if (numOne > numTwo)
+{
     Console.WriteLine($"{numOne} > {numTwo}");
 }
-if (numOne < numTwo) {
+if (numOne < numTwo)
+{
     Console.WriteLine($"{numOne} < {numTwo}");
 }
-if (numTwo > numOne) {
+if (numTwo > numOne)
+{
     Console.WriteLine($"{numTwo} > {numOne}");
 }
-if (numTwo < numOne) {
+if (numTwo < numOne)
+{
     Console.WriteLine($"{numTwo} < {numOne}");
 }
 
@@ -93,7 +97,8 @@ int numN = Convert.ToInt32(n);
 
 for (int i = 1; i <= numN; i++)
 {
-    if (i % 2 == 0) {
+    if (i % 2 == 0)
+    {
         Console.WriteLine($"Число {i} является четным!");
     }
 }
