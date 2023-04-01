@@ -63,6 +63,24 @@ else if (numThree > numOne)
 
 Console.WriteLine("Максимальное число: " + max);
 
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.WriteLine("Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).");
+System.Console.WriteLine("Введите число: ");
+string? one = Console.ReadLine();
+int numOne = Convert.ToInt32(one);
+
+if (numOne % 2 == 0)
+{
+    Console.WriteLine($"Число {numOne} является четным!");
+    return;
+}
+Console.WriteLine($"Число {numOne} НЕ является четным!");
+
 
 
 
