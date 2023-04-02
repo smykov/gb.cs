@@ -4,31 +4,31 @@
 // a = 5; b = 7 -> max = 7
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
-
+Console.Clear();
 Console.WriteLine("Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее");
 System.Console.WriteLine("Введите первое число: ");
-string one = Console.ReadLine();
+string? first = Console.ReadLine();
 System.Console.WriteLine("Введите второе число: ");
-string two = Console.ReadLine();
+string? second = Console.ReadLine();
 
-int numOne = Convert.ToInt32(one);
-int numTwo = Convert.ToInt32(two);
+int numFirst = int.Parse(first ?? "");
+int numSecond = Convert.ToInt32(second);
 
-if (numOne > numTwo)
+if (numFirst > numSecond)
 {
-    Console.WriteLine($"{numOne} > {numTwo}");
+    Console.WriteLine($"{numFirst} > {numSecond}");
 }
-if (numOne < numTwo)
+if (numFirst < numSecond)
 {
-    Console.WriteLine($"{numOne} < {numTwo}");
+    Console.WriteLine($"{numFirst} < {numSecond}");
 }
-if (numTwo > numOne)
+if (numSecond > numFirst)
 {
-    Console.WriteLine($"{numTwo} > {numOne}");
+    Console.WriteLine($"{numSecond} > {numFirst}");
 }
-if (numTwo < numOne)
+if (numSecond < numFirst)
 {
-    Console.WriteLine($"{numTwo} < {numOne}");
+    Console.WriteLine($"{numSecond} < {numFirst}");
 }
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -75,15 +75,15 @@ Console.WriteLine("Максимальное число: " + max);
 
 Console.WriteLine("Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).");
 System.Console.WriteLine("Введите число: ");
-string? one = Console.ReadLine();
-int numOne = Convert.ToInt32(one);
+string? str = Console.ReadLine();
+int number = Convert.ToInt32(str);
 
-if (numOne % 2 == 0)
+if (number % 2 == 0)
 {
-    Console.WriteLine($"Число {numOne} является четным!");
+    Console.WriteLine($"Число {number} является четным!");
     return;
 }
-Console.WriteLine($"Число {numOne} НЕ является четным!");
+Console.WriteLine($"Число {number} НЕ является четным!");
 
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
@@ -92,8 +92,7 @@ Console.WriteLine($"Число {numOne} НЕ является четным!");
 
 Console.WriteLine("Программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.");
 System.Console.WriteLine("Введите число N: ");
-string? n = Console.ReadLine();
-int numN = Convert.ToInt32(n);
+int numN = int.Parse(Console.ReadLine() ?? "");
 
 for (int i = 1; i <= numN; i++)
 {
