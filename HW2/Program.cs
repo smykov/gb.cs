@@ -7,8 +7,14 @@
 Console.WriteLine("Введите трехзначное число: ");
 string? str = Console.ReadLine();
 
-Console.WriteLine(str[1]);
-
+if (longStr.Length == 3)
+{
+    Console.WriteLine(str[1]);
+}
+else
+{
+    Console.WriteLine("Ошибка ввода!");
+}
 
 Console.WriteLine("\nПрограмма, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
 // Пример
